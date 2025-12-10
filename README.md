@@ -70,9 +70,9 @@ $$
 
 **Kluczowe Wnioski Metodologiczne:**
 
-1.  **Łatwość Klasyfikacji:** Stosunkowo wysokie wyniki osiągnięto dla większości testowanych architektur, co sugeruje, że cechy zbioru Breast Cancer Wisconsin są **silnie dyskryminacyjne**.
-2.  **Rola Optymalizatora:** Badanie solverów wykazało **największy kontrast** w wydajności. Potwierdza to, że efektywność algorytmu optymalizacyjnego (`adam`) jest czynnikiem krytycznym, przewyższającym marginalne różnice wynikające ze zmian architektury.
-3.  **Następne Kroki:** W celu potencjalnej poprawy wyniku, należałoby zbadać wpływ **współczynnika regularyzacji** ($\alpha$) oraz przeprowadzić dokładniejszy Grid Search wokół najlepszych parametrów.
+1.  **Łatwość klasyfikacji:** Stosunkowo wysokie wyniki osiągnięto dla większości testowanych architektur, co sugeruje, że cechy zbioru Breast Cancer Wisconsin są **silnie dyskryminacyjne** (łatwe do oddzielenia liniowo/nieliniowo).
+2.  **Rola optymalizatora:** Badanie solverów wykazało **największy kontrast** w wydajności. Potwierdza to, że efektywność algorytmu optymalizacyjnego (`adam`) jest czynnikiem krytycznym, przewyższającym marginalne różnice wynikające ze zmian architektury.
+3.  **Następne kroki:** W celu potencjalnej poprawy wyniku, należałoby zbadać wpływ **współczynnika regularyzacji** ($\alpha$) oraz przeprowadzić dokładniejszy Grid Search wokół najlepszych parametrów.
 
 ---
 ---
@@ -147,4 +147,6 @@ $$
 
 **Key Methodological Conclusions:**
 
-1.  **Ease of Classification:** The consistently high scores across most architectures suggest that the features of the Breast Cancer Wisconsin dataset are **highly
+1.  **Ease of classification:** The consistently high scores across most architectures suggest that the features of the Breast Cancer Wisconsin dataset are **highly discriminative**.
+2.  **Role of the optimizer:** The solver study revealed the **largest performance contrast**. This confirms that the efficiency of the optimization algorithm (`adam`) is a critical factor, outweighing the marginal differences from architecture changes.
+3.  **Future work:** To potentially improve the result further, the influence of the **regularization parameter** ($\alpha$) should be investigated, along with a refined Grid Search around the established best parameters.
