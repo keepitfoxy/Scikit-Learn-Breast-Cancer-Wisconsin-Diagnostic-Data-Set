@@ -4,6 +4,12 @@
 
 # Sprawozdanie z Badania Klasyfikatora Perceptronu Wielowarstwowego (MLP) // ENG BELOW
 
+Autorzy: Katarzyna Lisiecka 541653, Wiktor Wenta 52815
+
+IAiSC 1st 5sem Ćw3N
+
+
+
 ### 1. Cel i Metodologia
 
 Celem ćwiczenia było zbadanie wpływu kluczowych hiperparametrów (architektury, funkcji aktywacji, solwera) modelu Perceptronu Wielowarstwowego (MLP) na zadanie klasyfikacji binarnej.
@@ -64,10 +70,9 @@ Badania przeprowadzono dla $HLS=(30, 30)$ i $Activation='relu'$.
 
 Ostatecznie, najlepszy model klasyfikatora MLP osiągnął średnią **Balanced Accuracy na poziomie 0.9756** przy następującej konfiguracji:
 
-$$
-\text{MLPClassifier}(\text{hidden\_layer\_sizes}=(30, 30), \text{activation}='relu', \text{solver}='adam')
-$$
-
+```python
+MLPClassifier(hidden_layer_sizes=(30, 30), activation='relu', solver='adam')
+```
 **Kluczowe Wnioski Metodologiczne:**
 
 1.  **Łatwość klasyfikacji:** Stosunkowo wysokie wyniki osiągnięto dla większości testowanych architektur, co sugeruje, że cechy zbioru Breast Cancer Wisconsin są **silnie dyskryminacyjne** (łatwe do oddzielenia liniowo/nieliniowo).
@@ -80,6 +85,10 @@ $$
 # English Version (Technical Report)
 
 ## Multilayer Perceptron (MLP) Classifier Hyperparameter Study Report
+
+Authors: Katarzyna Lisiecka 541653, Wiktor Wenta 52815
+
+IAiSC 1st 5sem Ćw3N
 
 ### 1. Objective and Methodology
 
@@ -141,10 +150,9 @@ The study was conducted using $HLS=(30, 30)$ and $Activation='relu'$.
 
 The final best MLP classifier model achieved an average **Balanced Accuracy of 0.9756** with the following configuration:
 
-$$
-\text{MLPClassifier}(\text{hidden\_layer\_sizes}=(30, 30), \text{activation}='relu', \text{solver}='adam')
-$$
-
+```python
+MLPClassifier(hidden_layer_sizes=(30, 30), activation='relu', solver='adam')
+```
 **Key Methodological Conclusions:**
 
 1.  **Ease of classification:** The consistently high scores across most architectures suggest that the features of the Breast Cancer Wisconsin dataset are **highly discriminative**.
